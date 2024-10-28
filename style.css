@@ -1,0 +1,128 @@
+body {
+    text-align: center;
+    background-color: #011F3F;
+    font-family: 'Press Start 2P', cursive;
+    color: #FEF2BF;
+}
+
+#level-title {
+    font-size: 3rem;
+    margin: 5%;
+}
+
+#high-score,
+#level-up-message {
+    font-size: 1.5rem;
+    color: #F0E68C;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.btn {
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+    border: 6px solid black;
+    border-radius: 20%;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn:active,
+.pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.game-over {
+    animation: flash 0.2s alternate 5;
+}
+
+@keyframes flash {
+    0% {
+        background-color: red;
+    }
+
+    100% {
+        background-color: #011F3F;
+    }
+}
+
+.start {
+    margin: 25px;
+    padding: 15px 30px;
+    border: 5px solid black;
+    border-radius: 25%;
+    font-size: 1.5rem;
+    background-color: darkorange;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+.start:hover {
+    background-color: #ffcc66;
+}
+
+#leaderboard-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    color: #FEF2BF;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#leaderboard-list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 300px;
+    margin: auto;
+    background-color: #033363;
+    border-radius: 8px;
+    padding: 10px;
+    color: #FEF2BF;
+    font-family: Arial, sans-serif;
+}
+
+#leaderboard-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #FEF2BF;
+}
+
+#leaderboard-list li:last-child {
+    border-bottom: none;
+}
+
+#leaderboard-list li span {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
