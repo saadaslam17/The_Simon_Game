@@ -28,8 +28,8 @@ body {
 
 .btn {
     margin: 15px;
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
     border: 6px solid black;
     border-radius: 20%;
     transition: transform 0.1s ease, box-shadow 0.1s ease;
@@ -126,3 +126,29 @@ body {
     font-weight: bold;
     font-size: 1.2rem;
 }
+
+.how-to-play-btn {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: darkorange;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.how-to-play-btn:hover { background-color: #ffcc66; }
+
+.back-to-game {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: darkorange;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.back-to-game:hover { background-color: #ffcc66; }
